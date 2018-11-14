@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Numbers API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="ajax.css">
+</head>
+<body class='bg-dark'>
+  <div class="container">
+    <h1 class='text-center text-white'>NUMBERS PARTY</h1>
+
+      <form class="form-inline justify-content-center">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control-plaintext mr-2 border rounded bg-light" id="number" placeholder="Enter a random number">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 mr-2 bg-secondary" id='search-gif'>Get Number fact</button>
+
+        <button type="submit" class="btn btn-primary mb-2 bg-warning" id='remove-gif'>Remove Facts</button>
+      </form>
+
+      <div class='row' id="gif-container"></div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="numbers.js"></script>
+</body>
+</html>

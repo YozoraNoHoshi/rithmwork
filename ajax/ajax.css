@@ -1,0 +1,15 @@
+img {
+  width: 200px;
+  height: auto;
+}
+#search-gif:hover {
+  background-color: lightgrey;
+}
+#remove-gif:hover {
+  background-color: orange;
+}
+
+#number {
+  width: 30ch;
+  font-size: 12px;
+}
