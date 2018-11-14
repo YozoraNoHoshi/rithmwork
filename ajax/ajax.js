@@ -1,3 +1,5 @@
+import ajaxAPI from './ajaxAPI';
+
 $(() => {
   let $search = $('#search-gif');
   let $remove = $('#remove-gif');
@@ -15,7 +17,8 @@ $(() => {
 });
 function searchClick() {
   let $entry = $('#search').val();
-  let apiURL = `http://api.giphy.com/v1/gifs/search?q=${$entry}&api_key=dc6zaTOxFJmzC`;
+
+  let apiURL = `http://api.giphy.com/v1/gifs/search?q=${$entry}${ajaxAPI.api}`;
   $.get(apiURL, res => {
     parseURL(res);
   });
