@@ -20,7 +20,6 @@ async function readCmd() {
     logResults(filename, data);
   }
 }
-
 function cat(path) {
   try {
     return fs.readFileSync(`${path}`, 'utf8');
