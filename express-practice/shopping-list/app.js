@@ -61,7 +61,6 @@ app.use(function(req, res, next) {
 
 app.use(function(error, req, res, next) {
   let status = error.status || 500;
-
   return res.status(status).json({
     error: {
       message: error.message,
